@@ -1,5 +1,11 @@
 import { Timer, SearchBar, ProductCategoryRow, ProductRow } from "./Atoms";
-import { Header, Footer, ProductTable } from "./Moleculs";
+import {
+  Header,
+  Footer,
+  ProductTable,
+  TemperatureInput,
+  TemperatureDisplay,
+} from "./Moleculs";
 
 export default {
   Timer,
@@ -9,4 +15,6 @@ export default {
   ProductTable,
   ProductCategoryRow,
   ProductRow,
+  TemperatureInput,
+  TemperatureDisplay,
 };

@@ -6,6 +6,7 @@ import ContextDemo from "./ContextDemo/ContextDemo";
 import Form from "./Form/Form";
 import SimpleConditionalRendering from "./ConditionalRendering/ConditionalRendering";
 import ListRendering from "./ListRendering/ListRendering";
+import LiftingStateUp from "./LiftingStateUp/LiftingStateUp";
 
 export {
   Countdown,
@@ -16,4 +17,5 @@ export {
   Form,
   SimpleConditionalRendering,
   ListRendering,
+  LiftingStateUp,
 };

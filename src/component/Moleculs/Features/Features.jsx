@@ -50,6 +50,12 @@ const Features = () => {
                 >
                     Go to List Rendering
                 </button>
+                <button
+                    onClick={() => navigate("/lifting-state-up")}
+                    className="btn btn-light m-2"
+                >
+                    Go to Lifting State Up
+                </button>
             </div>
         </section>
     );
