@@ -39,10 +39,16 @@ const Features = () => {
                     Go to Context
                 </button>
                 <button
-                    onClick={() => navigate("/rendering")}
+                    onClick={() => navigate("/conditional-rendering")}
                     className="btn btn-dark m-2"
                 >
-                    Go to Rendering
+                    Go to Conditional Rendering
+                </button>
+                <button
+                    onClick={() => navigate("/list-rendering")}
+                    className="btn btn-light m-2"
+                >
+                    Go to List Rendering
                 </button>
             </div>
         </section>

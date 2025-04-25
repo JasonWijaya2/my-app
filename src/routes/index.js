@@ -5,6 +5,7 @@ import Counter from "./Counter/Counter";
 import ContextDemo from "./ContextDemo/ContextDemo";
 import Form from "./Form/Form";
 import SimpleConditionalRendering from "./ConditionalRendering/ConditionalRendering";
+import ListRendering from "./ListRendering/ListRendering";
 
 export {
   Countdown,
@@ -14,4 +15,5 @@ export {
   ContextDemo,
   Form,
   SimpleConditionalRendering,
+  ListRendering,
 };
