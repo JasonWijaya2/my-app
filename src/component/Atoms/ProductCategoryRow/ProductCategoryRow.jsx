@@ -1,11 +1,11 @@
 function ProductCategoryRow({ category }) {
     return (
-        <tr>
-            <th colSpan="2">
+        <tr className="table-secondary">
+            <th colSpan="2" className="text-center">
                 {category}
             </th>
         </tr>
     );
 }
 
-export default ProductCategoryRow
+export default ProductCategoryRow;

@@ -4,79 +4,45 @@ const Features = () => {
     const navigate = useNavigate();
 
     return (
-        <section style={{ padding: "2rem", backgroundColor: "#ffffff", textAlign: "center" }}>
+        <section className="text-center py-5">
             <h3>Features</h3>
             <p>Explore the features of this application:</p>
-            <div style={{ marginTop: "1rem" }}>
+            <div className="mt-3">
                 <button
                     onClick={() => navigate("/thinking")}
-                    style={{
-                        padding: "0.5rem 1rem",
-                        margin: "0.5rem",
-                        backgroundColor: "#0d6efd",
-                        color: "white",
-                        border: "none",
-                        borderRadius: "5px",
-                        cursor: "pointer",
-                    }}
+                    className="btn btn-primary m-2"
                 >
                     Go to Thinking
                 </button>
                 <button
                     onClick={() => navigate("/counter")}
-                    style={{
-                        padding: "0.5rem 1rem",
-                        margin: "0.5rem",
-                        backgroundColor: "#0d6efd",
-                        color: "white",
-                        border: "none",
-                        borderRadius: "5px",
-                        cursor: "pointer",
-                    }}
+                    className="btn btn-secondary m-2"
                 >
                     Go to Counter
                 </button>
                 <button
                     onClick={() => navigate("/countdown")}
-                    style={{
-                        padding: "0.5rem 1rem",
-                        margin: "0.5rem",
-                        backgroundColor: "#198754",
-                        color: "white",
-                        border: "none",
-                        borderRadius: "5px",
-                        cursor: "pointer",
-                    }}
+                    className="btn btn-success m-2"
                 >
                     Go to Countdown
                 </button>
                 <button
                     onClick={() => navigate("/form")}
-                    style={{
-                        padding: "0.5rem 1rem",
-                        margin: "0.5rem",
-                        backgroundColor: "#198754",
-                        color: "white",
-                        border: "none",
-                        borderRadius: "5px",
-                        cursor: "pointer",
-                    }}
+                    className="btn btn-warning m-2"
                 >
                     Go to Form
                 </button>
                 <button
                     onClick={() => navigate("/context")}
-                    style={{
-                        padding: "0.5rem 1rem",
-                        margin: "0.5rem",
-                        backgroundColor: "#198754",
-                        color: "white",
-                        border: "none",
-                        borderRadius: "5px",
-                        cursor: "pointer",
-                    }}
+                    className="btn btn-info m-2"
                 >
                     Go to Context
+                </button>
+                <button
+                    onClick={() => navigate("/rendering")}
+                    className="btn btn-dark m-2"
+                >
+                    Go to Rendering
                 </button>
             </div>
         </section>

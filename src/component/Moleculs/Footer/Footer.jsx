@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <footer style={{ backgroundColor: "#282c34", padding: "1rem", color: "white", textAlign: "center" }}>
+        <footer className="bg-dark text-white py-3 text-center">
             <p>&copy; 2025 React Components. All rights reserved.</p>
         </footer>
     );

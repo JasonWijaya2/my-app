@@ -1,8 +1,10 @@
 const Hero = () => {
     return (
-        <section style={{ padding: "2rem", textAlign: "center", backgroundColor: "#f0f0f0" }}>
+        <section className="bg-light text-center py-5">
             <h2>Learn About React Components</h2>
-            <p>I have already build React Thinking Component and Countdown Component. Choose the Features below to go to page!</p>
+            <p>
+                I have already built React Thinking Component and Countdown Component. Choose the Features below to go to the page!
+            </p>
         </section>
     );
 };

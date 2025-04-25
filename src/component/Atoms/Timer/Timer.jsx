@@ -57,12 +57,13 @@ const Timer = () => {
     };
 
     return (
-        <div style={{ textAlign: "center", color: "#333" }}>
-            <h1>Countdown Timer</h1>
-            <div>
+        <div className="container text-center mt-5">
+            <h1 className="mb-4">Countdown Timer</h1>
+            <div className="mb-3">
                 <input
                     type="number"
                     id="minutes-input"
+                    className="form-control d-inline w-auto me-2"
                     placeholder="Minutes"
                     value={inputMinutes}
                     onChange={(e) => setInputMinutes(e.target.value)}
@@ -70,6 +71,7 @@ const Timer = () => {
                 />
                 <button
                     id="start-btn"
+                    className="btn btn-primary"
                     onClick={handleStart}
                     disabled={isRunning && !isPaused}
                 >
@@ -78,54 +80,47 @@ const Timer = () => {
             </div>
             <h2
                 id="countdown-display"
-                className={
-                    remainingSeconds <= 10
+                className={`display-4 ${remainingSeconds <= 10
                         ? "critical"
                         : remainingSeconds <= 30
-                        ? "warning"
-                        : ""
-                }
-                style={{ fontSize: "48px" }}
+                            ? "warning"
+                            : ""
+                    }`}
             >
                 {formatTime(remainingSeconds)}
             </h2>
-            <div>
+            <div className="mt-3">
                 <button
                     id="pause-btn"
+                    className="btn btn-warning me-2"
                     onClick={handlePause}
                     disabled={!isRunning}
                 >
                     {isPaused ? "Resume" : "Pause"}
                 </button>
-                <button id="reset-btn" onClick={handleReset}>
+                <button
+                    id="reset-btn"
+                    className="btn btn-danger"
+                    onClick={handleReset}
+                >
                     Reset
                 </button>
             </div>
-            <div style={{ marginTop: "20px" }}>
+            <div className="progress mt-4" style={{ height: "10px" }}>
                 <div
+                    id="progress-bar"
+                    className="progress-bar"
+                    role="progressbar"
                     style={{
-                        height: "10px",
-                        width: "100%",
-                        backgroundColor: "#ddd",
-                        borderRadius: "5px",
-                        overflow: "hidden",
+                        width: `${progressPercentage()}%`,
+                        backgroundColor:
+                            remainingSeconds <= 10
+                                ? "#dc3545"
+                                : remainingSeconds <= 30
+                                    ? "#ffc107"
+                                    : "#28a745",
                     }}
-                >
-                    <div
-                        id="progress-bar"
-                        className="progress-bar"
-                        style={{
-                            height: "100%",
-                            width: `${progressPercentage()}%`,
-                            backgroundColor:
-                                remainingSeconds <= 10
-                                    ? "#dc3545"
-                                    : remainingSeconds <= 30
-                                    ? "#bd2130"
-                                    : "green",
-                        }}
-                    ></div>
-                </div>
+                ></div>
             </div>
         </div>
     );

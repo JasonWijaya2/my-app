@@ -2,7 +2,7 @@
 import { HashRouter, Route, Routes, Navigate } from "react-router-dom";
 import Countdown from "./routes/Countdown/Countdown";
 import FilterableProductTable from "./routes/FilterableProductTable/FilterableProductTable";
-import { Counter, SimplePage, ContextDemo, Form } from "./routes";
+import { Counter, SimplePage, ContextDemo, Form, SimpleConditionalRendering } from "./routes";
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
         <Route path="/context" element={<ContextDemo />} />
         <Route path="/form" element={<Form />} />
         <Route path="/thinking" element={<FilterableProductTable />} />
+        <Route path="/rendering" element={<SimpleConditionalRendering />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </HashRouter>

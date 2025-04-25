@@ -4,6 +4,7 @@ import SimplePage from "./SimplePage/SimplePage";
 import Counter from "./Counter/Counter";
 import ContextDemo from "./ContextDemo/ContextDemo";
 import Form from "./Form/Form";
+import SimpleConditionalRendering from "./ConditionalRendering/ConditionalRendering";
 
 export {
   Countdown,
@@ -12,4 +13,5 @@ export {
   Counter,
   ContextDemo,
   Form,
+  SimpleConditionalRendering,
 };

@@ -21,16 +21,18 @@ function ProductTable({ products }) {
     });
 
     return (
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>{rows}</tbody>
-        </table>
+        <div className="table-responsive">
+            <table className="table table-bordered table-striped">
+                <thead className="table-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>{rows}</tbody>
+            </table>
+        </div>
     );
 }
 
-export default ProductTable
+export default ProductTable;

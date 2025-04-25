@@ -1,14 +1,14 @@
 const Newsletter = () => {
     return (
-        <section style={{ padding: "2rem", textAlign: "center", backgroundColor: "#f9f9f9" }}>
+        <section className="bg-light text-center py-5">
             <h3>Subscribe to our Newsletter</h3>
-            <form>
+            <form className="d-flex justify-content-center mt-3">
                 <input
                     type="email"
                     placeholder="Enter your email"
-                    style={{ padding: "0.5rem", marginRight: "0.5rem", width: "250px" }}
+                    className="form-control w-50 me-2"
                 />
-                <button type="submit" style={{ padding: "0.5rem 1rem", backgroundColor: "#282c34", color: "white" }}>
+                <button type="submit" className="btn btn-dark">
                     Subscribe
                 </button>
             </form>

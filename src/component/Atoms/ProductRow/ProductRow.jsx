@@ -1,8 +1,9 @@
 function ProductRow({ product }) {
-    const name = product.stocked ? product.name :
-        <span style={{ color: 'red' }}>
+    const name = product.stocked ? product.name : (
+        <span className="text-danger">
             {product.name}
-        </span>;
+        </span>
+    );
 
     return (
         <tr>
@@ -12,4 +13,4 @@ function ProductRow({ product }) {
     );
 }
 
-export default ProductRow
+export default ProductRow;

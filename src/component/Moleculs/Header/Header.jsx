@@ -1,9 +1,9 @@
 const Header = ({ title }) => {
     return (
-        <header style={{ backgroundColor: "#282c34", padding: "1rem", color: "white", textAlign: "center" }}>
+        <header className="bg-dark text-white py-3 text-center">
             <h1>{title}</h1>
         </header>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;
