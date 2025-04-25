@@ -52,9 +52,21 @@ const Features = () => {
                 </button>
                 <button
                     onClick={() => navigate("/lifting-state-up")}
-                    className="btn btn-light m-2"
+                    className="btn btn-danger m-2"
                 >
                     Go to Lifting State Up
+                </button>
+                <button
+                    onClick={() => navigate("/callback-children")}
+                    className="btn btn-primary m-2"
+                >
+                    Go to Callback Children
+                </button>
+                <button
+                    onClick={() => navigate("/todo")}
+                    className="btn btn-danger m-2"
+                >
+                    Go to Todo App BNI
                 </button>
             </div>
         </section>
