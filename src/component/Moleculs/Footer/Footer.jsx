@@ -1,0 +1,9 @@
+const Footer = () => {
+    return (
+        <footer style={{ backgroundColor: "#282c34", padding: "1rem", color: "white", textAlign: "center" }}>
+            <p>&copy; 2025 React Components. All rights reserved.</p>
+        </footer>
+    );
+};
+
+export default Footer;

@@ -1,0 +1,205 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Light and Dark Theme Classes */
+  header.light {
+    background-color: #ffffff;
+    color: #333333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  header.dark {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  main.light {
+    background-color: #f8f9fa;
+    color: #333333;
+  }
+  
+  main.dark {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  footer.light {
+    background-color: #f1f1f1;
+    color: #666666;
+  }
+  
+  footer.dark {
+    background-color: #1a1a1a;
+    color: #aaaaaa;
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-left: 1.5rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+  
+  header.light nav a:hover {
+    color: #3498db;
+  }
+  
+  header.dark nav a:hover {
+    color: #60a5fa;
+  }
+  
+  .theme-toggle {
+    background-color: transparent;
+    border: 1px solid;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  header.light .theme-toggle {
+    border-color: #333;
+    color: #333;
+  }
+  
+  header.light .theme-toggle:hover {
+    background-color: #333;
+    color: white;
+  }
+  
+  header.dark .theme-toggle {
+    border-color: #ddd;
+    color: #ddd;
+  }
+  
+  header.dark .theme-toggle:hover {
+    background-color: #ddd;
+    color: #121212;
+  }
+  
+  /* Main Content Styles */
+  main {
+    flex: 1;
+    padding: 2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  h1.dark {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #e0e0e0;
+  }
+  
+  h1.light {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #121212;;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  .code-example {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+  }
+  
+  main.light .code-example {
+    background-color: #f1f1f1;
+  }
+  
+  main.dark .code-example {
+    background-color: #2d2d2d;
+  }
+  
+  .code-example code {
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .card {
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  main.light .card {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  main.light .card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  main.dark .card {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  main.dark .card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Footer Styles */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }

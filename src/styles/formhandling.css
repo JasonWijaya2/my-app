@@ -1,0 +1,131 @@
+.simple-form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3d8b40;
+  }
+  
+  button[type="button"] {
+    background-color: #f1f1f1;
+    color: #333;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .success-message {
+    text-align: center;
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .success-message h3 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+  }
+  
+  .success-message button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+  }
+  
+  .success-message button:hover {
+    background-color: #3d8b40;
+  }
+  
+  /* Code explanation section */
+  .code-explanation {
+    margin-top: 30px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 4px;
+    border-left: 4px solid #2196f3;
+  }
+  
+  .code-explanation h3 {
+    margin-top: 0;
+    color: #2196f3;
+  }
+  
+  .code-explanation ol {
+    padding-left: 20px;
+  }
+  
+  .code-explanation li {
+    margin-bottom: 15px;
+  }
+  
+  .code-explanation pre {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin: 5px 0;
+  }
+  
+  .code-explanation code {
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    font-size: 14px;
+  }
